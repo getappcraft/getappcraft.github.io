@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Debrief — feedback videos become context for your coding agent</title>
+<meta name="description" content="A Mac video player that transcribes client feedback and captures the screens while you watch, then hands your AI coding agent a folder it can read.">
+<meta property="og:title" content="Debrief — feedback videos become context">
+<meta property="og:description" content="Watch the video once. The transcript, the screens and a summary are waiting when it ends.">
+<meta property="og:type" content="product">
+<link rel="icon" href="assets/img/debrief-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="wrap nav__inner">
+    <a class="brand" href="index.html"><span class="brand__mark" aria-hidden="true"></span> App Craft</a>
+    <div class="nav__links">
+      <a href="#how">How it works</a>
+      <a href="#requirements">Requirements</a>
+      <a class="btn btn--primary" href="#buy">Buy — $29</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="hero__glow" aria-hidden="true"></div>
+  <div class="wrap">
+    <img class="reveal" src="assets/img/debrief-icon.png" alt="" width="84" height="84" style="border-radius:19px;margin-bottom:26px;display:block">
+    <p class="eyebrow reveal">Debrief &middot; for macOS</p>
+    <h1 class="reveal" data-delay="1">Your client explains it once. Your agent gets all of it.</h1>
+    <p class="reveal" data-delay="2">
+      Open a feedback recording and press play. While you watch, Debrief transcribes what was
+      said and captures the screens it was said about. When the video ends, a folder is ready —
+      paste its path to Claude Code, Cursor or anything else that reads files.
+    </p>
+    <div class="hero__actions reveal" data-delay="3">
+      <a class="btn btn--primary btn--lg" href="#buy">Buy Debrief — $29</a>
+      <a class="btn btn--ghost btn--lg" href="#how">How it works</a>
+    </div>
+  </div>
+</header>
+
+<section id="how">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <h2>You were going to watch it anyway</h2>
+      <p class="lede">
+        The usual routine is watch it, run it through a converter, wait, paste the output, then
+        write a summary because the output lost the visual half. Debrief does all of that as a
+        side effect of pressing play.
+      </p>
+    </div>
+
+    <div class="steps">
+      <div class="step reveal">
+        <span class="step__n">01</span>
+        <h3>You watch</h3>
+        <p>Drop in a local file or paste a link — a ClickUp attachment, a direct video URL. It plays immediately, with the transcript filling in beside it as it goes.</p>
+      </div>
+      <div class="step reveal" data-delay="1">
+        <span class="step__n">02</span>
+        <h3>Debrief listens</h3>
+        <p>Transcription runs many times faster than the video, so it finishes long before you do. Press <b>M</b> at any moment to mark it — that frame gets kept and promoted.</p>
+      </div>
+      <div class="step reveal" data-delay="2">
+        <span class="step__n">03</span>
+        <h3>You hand it over</h3>
+        <p>Copy the folder path. Your agent reads the summary, the corrected transcript, the extracted requests, and only the screenshots that matter.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="rule">
+
+<section>
+  <div class="wrap bundle">
+    <div class="reveal">
+      <h2>What your agent actually reads</h2>
+      <p class="lede" style="margin-bottom:30px">
+        A plain folder. No database, no proprietary format — just files, laid out so an agent
+        spends tokens on the summary and only opens a screenshot when the summary says to.
+      </p>
+      <ul class="list">
+        <li><strong>manifest.md</strong> The entry point. Summary, every request as a table, and a one-line description of each screenshot.</li>
+        <li><strong>ai/</strong> The cleaned transcript with misheard product names corrected, the requests as JSON, and the frames worth looking at.</li>
+        <li><strong>raw/</strong> Everything before processing, for when the summary is not enough.</li>
+        <li><strong>marks/</strong> The exact frames you flagged while watching.</li>
+      </ul>
+    </div>
+
+    <div class="tree reveal" data-delay="1" aria-label="Example session folder structure">
+<b>2026-09-21-141530-client-round-2/</b>
+├── <b>manifest.md</b>          <i>← agent starts here</i>
+├── meta.json
+├── <b>ai/</b>
+│   ├── transcript.md       <i>corrected</i>
+│   ├── feedback-items.json <i>structured</i>
+│   └── keyframes/          <i>the ones that matter</i>
+├── <b>raw/</b>
+│   ├── transcript.txt      <i>verbatim</i>
+│   └── keyframes/          <i>all of them</i>
+└── <b>marks/</b>
+    └── 00-03-12.jpg        <i>you pressed M here</i>
+    </div>
+  </div>
+</section>
+
+<hr class="rule">
+
+<section>
+  <div class="wrap">
+    <div class="section-head reveal">
+      <h2>It is a real player first</h2>
+      <p class="lede">
+        You will open it several times a day next to QuickTime and IINA. It behaves like
+        software that expects that.
+      </p>
+    </div>
+    <div class="steps">
+      <div class="step reveal">
+        <span class="step__n">↩</span>
+        <h3>Never loses your place</h3>
+        <p>Reopen a video and it resumes where you stopped — even if you renamed or moved the file. Recents greet you at launch with thumbnails and progress.</p>
+      </div>
+      <div class="step reveal" data-delay="1">
+        <span class="step__n">⌘</span>
+        <h3>Keyboard throughout</h3>
+        <p>Space, arrows, frame stepping, speed, A–B loop, Picture in Picture, media keys and Now Playing. Everything reachable without the mouse.</p>
+      </div>
+      <div class="step reveal" data-delay="2">
+        <span class="step__n">⌕</span>
+        <h3>A searchable transcript</h3>
+        <p>The sidebar fills as transcription runs. Click any line to jump there, or search for the thing you half-remember hearing.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="rule">
+
+<section id="requirements">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <h2>Check this before you buy</h2>
+      <p class="lede">
+        Debrief uses Apple&rsquo;s on-device intelligence, which means nothing leaves your Mac —
+        and it also means it will not run on every Mac. Please make sure yours qualifies.
+      </p>
+    </div>
+    <dl class="reqs reveal">
+      <div class="req"><dt>macOS</dt><dd>26 Tahoe or later</dd></div>
+      <div class="req"><dt>Chip</dt><dd>Apple Silicon (M1 or newer)</dd></div>
+      <div class="req"><dt>Apple Intelligence</dt><dd>Enabled in System Settings</dd></div>
+      <div class="req"><dt>Internet</dt><dd>Not required to process</dd></div>
+    </dl>
+  </div>
+</section>
+
+<hr class="rule">
+
+<section id="buy">
+  <div class="wrap">
+    <div class="price-card reveal">
+      <p class="eyebrow">One payment</p>
+      <p class="price">$29<sup>USD</sup></p>
+      <p class="price-note">Yours permanently, on up to three Macs. Updates included.</p>
+      <a class="btn btn--primary btn--lg" href="#" data-checkout>Buy Debrief</a>
+      <div class="price-points">
+        <span>Three sessions free before you pay</span>
+        <span>·</span>
+        <span>No subscription</span>
+        <span>·</span>
+        <span>No account</span>
+        <span>·</span>
+        <span>Nothing uploaded</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="wrap">
+    <div class="section-head reveal"><h2>Questions</h2></div>
+    <div class="faq reveal">
+      <details>
+        <summary>Can I try it first?</summary>
+        <p>Yes. The first three videos you process are free, with nothing held back — full transcript, screens and summary. The licence prompt appears on the fourth. The trial is counted in sessions rather than days because the product is judged per video, not per week.</p>
+      </details>
+      <details>
+        <summary>Does anything get uploaded?</summary>
+        <p>No. Transcription and summarisation run on your Mac using Apple&rsquo;s on-device models. There is no account, no server of mine, and no analytics. A video opened from a URL is fetched from that URL and nowhere else.</p>
+      </details>
+      <details>
+        <summary>Which videos work?</summary>
+        <p>Local files in any format macOS plays, and direct video links — including ClickUp attachments. YouTube, Loom and Vimeo links do not work: those sites do not serve a video file a player can open.</p>
+      </details>
+      <details>
+        <summary>How good is the summary, honestly?</summary>
+        <p>It depends on the recording. Clear narration over an app produces a genuinely useful list of requests. Rambling, heavy background noise, or unusual product names can produce something rougher — which is why the verbatim transcript and every captured frame are always kept alongside it, and why you get three free sessions to judge it on your own videos.</p>
+      </details>
+      <details>
+        <summary>How many Macs?</summary>
+        <p>Three. Enough for a laptop, a desktop and a spare, and you can move a licence between machines from Settings.</p>
+      </details>
+      <details>
+        <summary>What if it does not work for me?</summary>
+        <p>Email me and I will refund you. The three free sessions exist so this should rarely be necessary — please check the requirements above before buying, since Debrief cannot run without Apple Intelligence.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap foot">
+    <small>&copy; 2026 Hamza Malik</small>
+    <div class="foot__links">
+      <a href="index.html">All products</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="terms.html">Terms &amp; refunds</a>
+      <a href="mailto:appcraft.dev1@gmail.com">Support</a>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/app.js"></script>
+</body>
+</html>

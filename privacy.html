@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy — App Craft</title>
+<meta name="robots" content="noindex">
+<link rel="icon" href="assets/img/debrief-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<nav class="nav" data-scrolled="true">
+  <div class="wrap nav__inner">
+    <a class="brand" href="index.html"><span class="brand__mark" aria-hidden="true"></span> App Craft</a>
+    <div class="nav__links"><a href="index.html">Home</a></div>
+  </div>
+</nav>
+
+<main class="wrap prose">
+  <h1>Privacy</h1>
+  <p class="updated">Last updated 22 September 2026</p>
+
+  <p>Short version: Debrief does not collect anything about you, and I do not operate a server that your videos touch.</p>
+
+  <h2>What the app does with your videos</h2>
+  <p>Everything happens on your Mac. Transcription, screen capture and summarisation all run using Apple&rsquo;s on-device models. Your recordings, transcripts and the folders Debrief produces stay on your disk and are never sent anywhere.</p>
+  <p>If you open a video from a URL, Debrief fetches it from that address and nowhere else. If you save a ClickUp API token, it is stored in your macOS Keychain and only ever sent to ClickUp.</p>
+
+  <h2>What the app sends</h2>
+  <ul>
+    <li><strong>Licence checks.</strong> When you activate or verify your licence, the licence key and an anonymous identifier derived from your Mac&rsquo;s hardware ID are sent to Lemon Squeezy, who handle licensing. The identifier is a one-way hash; it cannot be reversed into anything about you or your machine.</li>
+    <li><strong>Update checks.</strong> The app asks my update feed whether a newer version exists. This is an ordinary web request and includes no identifying information beyond your current version.</li>
+  </ul>
+  <p>There is no analytics, no crash reporting, no telemetry and no account.</p>
+
+  <h2>What happens when you buy</h2>
+  <p>Purchases are processed by Lemon Squeezy, who act as the seller of record. They receive your email and payment details in order to take the payment, issue a receipt and send your licence key. I can see your email address and order details in their dashboard; I never see your card details. Their privacy policy governs that transaction.</p>
+
+  <h2>Contact</h2>
+  <p>Questions, or want your details removed from my records? Email <a href="mailto:appcraft.dev1@gmail.com">appcraft.dev1@gmail.com</a>.</p>
+</main>
+
+<footer>
+  <div class="wrap foot">
+    <small>&copy; 2026 Hamza Malik</small>
+    <div class="foot__links">
+      <a href="index.html">Home</a>
+      <a href="terms.html">Terms &amp; refunds</a>
+    </div>
+  </div>
+</footer>
+<script src="assets/app.js"></script>
+</body>
+</html>

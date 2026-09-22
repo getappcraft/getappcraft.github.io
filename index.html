@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>App Craft — software for Mac, iOS and Android</title>
+<meta name="description" content="Small, focused apps for Mac, iPhone and Android that do one thing properly. Made by Hamza Malik.">
+<meta property="og:title" content="App Craft — software for Mac, iOS and Android">
+<meta property="og:description" content="Small, focused apps that do one thing properly.">
+<meta property="og:type" content="website">
+<link rel="icon" href="assets/img/debrief-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="wrap nav__inner">
+    <a class="brand" href="/"><span class="brand__mark" aria-hidden="true"></span> App Craft</a>
+    <div class="nav__links">
+      <a href="#products">Products</a>
+      <a href="#about">About</a>
+      <a class="btn btn--ghost" href="debrief.html">Debrief</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="hero__glow" aria-hidden="true"></div>
+  <div class="wrap">
+    <p class="eyebrow reveal">Mac &middot; iOS &middot; Android</p>
+    <h1 class="reveal" data-delay="1">Small tools that do one thing properly.</h1>
+    <p class="reveal" data-delay="2">
+      I build native apps for the parts of my own work that felt like friction — on the Mac,
+      on the phone, wherever the friction is. No subscriptions, no accounts, no telemetry.
+    </p>
+    <div class="hero__actions reveal" data-delay="3">
+      <a class="btn btn--primary btn--lg" href="#products">See what I&rsquo;ve made</a>
+      <a class="btn btn--ghost btn--lg" href="#about">About</a>
+    </div>
+  </div>
+</header>
+
+<section id="products">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <h2>Products</h2>
+      <p class="lede">One out now, across Mac and mobile. More when they&rsquo;re worth charging for.</p>
+    </div>
+
+    <div class="products">
+      <article class="product reveal">
+        <img class="product__icon" src="assets/img/debrief-icon.png" alt="Debrief app icon" width="96" height="96">
+        <div>
+          <div class="product__meta">
+            <h3>Debrief</h3>
+            <span class="tag">macOS</span>
+            <span class="tag tag--live">Available</span>
+          </div>
+          <p>
+            A video player that turns client feedback recordings into context for your AI coding
+            agent. Watch the video once; the transcript, the screens and a summary are waiting
+            in a folder when it ends.
+          </p>
+        </div>
+        <a class="btn btn--primary" href="debrief.html">Learn more</a>
+      </article>
+
+      <article class="product product--soon reveal" data-delay="1">
+        <div class="product__icon" style="background: var(--bg-raised); border: 1px solid var(--line);" aria-hidden="true"></div>
+        <div>
+          <div class="product__meta">
+            <h3>Something next</h3>
+            <span class="tag">iOS</span>
+            <span class="tag">In progress</span>
+          </div>
+          <p>Another piece of my own workflow that deserves better than a shell script.</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<hr class="rule">
+
+<section id="about">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <h2>How I build</h2>
+    </div>
+
+    <div class="steps">
+      <div class="step reveal">
+        <span class="step__n">01</span>
+        <h3>Native, not wrapped</h3>
+        <p>
+          Built with each platform&rsquo;s own tools rather than a web view in a costume.
+          Apps launch instantly, respect your system settings, and behave like everything
+          else on the device because they are made the same way.
+        </p>
+      </div>
+      <div class="step reveal" data-delay="1">
+        <span class="step__n">02</span>
+        <h3>Your data stays yours</h3>
+        <p>
+          Work happens on your device wherever it can. No account to create, nothing
+          uploaded that does not need to be, and no analytics watching what you do.
+        </p>
+      </div>
+      <div class="step reveal" data-delay="2">
+        <span class="step__n">03</span>
+        <h3>Bought once</h3>
+        <p>
+          A price, not a subscription. You keep the version you paid for, and updates
+          come for as long as the app is alive.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap foot">
+    <small>&copy; 2026 Hamza Malik</small>
+    <div class="foot__links">
+      <a href="debrief.html">Debrief</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="terms.html">Terms &amp; refunds</a>
+      <a href="mailto:appcraft.dev1@gmail.com">Support</a>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/app.js"></script>
+</body>
+</html>
